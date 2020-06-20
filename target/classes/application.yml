@@ -16,12 +16,12 @@ spring:
 ##------------------------------------------------------------------
 eureka:
   instance:
-    hostname: localhost
+    hostname: sr-api-gateway-service
   client:
-    register-with-eureka: false
-    fetch-registry: true
+    register-with-eureka: false # client disabled
+    fetch-registry: false       # do not fetch registry
     registry-fetch-interval-seconds: 30
-    service-url:
+    service-url: #url to be used by services that want to register with eureka server (Gateway API)
       defaultZone: http://admin:12341234@${eureka.instance.hostname}:${server.port}/eureka
 
 

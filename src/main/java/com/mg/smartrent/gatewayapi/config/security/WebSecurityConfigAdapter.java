@@ -12,6 +12,7 @@ public class WebSecurityConfigAdapter extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable() //
                 .authorizeRequests() //
+                .antMatchers(HttpMethod.GET, "/actuator/health").permitAll() // allow health check to all
                 .antMatchers(HttpMethod.GET, "/eureka/**").authenticated() // eureka client
                 .antMatchers(HttpMethod.POST, "/eureka/**").authenticated() // eureka client
                 .antMatchers(HttpMethod.DELETE, "/eureka/**").authenticated() // eureka client

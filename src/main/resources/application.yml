@@ -16,7 +16,7 @@ spring:
 ##------------------------------------------------------------------
 eureka:
   instance:
-    hostname: localhost
+    hostname: sr-api-gateway-service
   client:
     register-with-eureka: false # client disabled
     fetch-registry: false       # do not fetch registry

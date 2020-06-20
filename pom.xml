@@ -13,8 +13,6 @@
         <relativePath/>
     </parent>
     <properties>
-        <graphql.sprq.version>0.0.4</graphql.sprq.version>
-        <graphql.version>5.0.2</graphql.version>
         <swagger.version>2.9.2</swagger.version>
     </properties>
 
@@ -47,24 +45,6 @@
         </dependency>
         <!--Spring }-->
 
-        <!-- GraphQL {-->
-        <dependency>
-            <groupId>com.graphql-java</groupId>
-            <artifactId>graphql-spring-boot-starter</artifactId>
-            <version>${graphql.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.graphql-java</groupId>
-            <artifactId>graphiql-spring-boot-starter</artifactId>
-            <version>${graphql.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.leangen.graphql</groupId>
-            <artifactId>graphql-spqr-spring-boot-starter</artifactId>
-            <version>${graphql.sprq.version}</version>
-        </dependency>
-        <!-- GraphQL }-->
-
         <!--Swagger {-->
         <dependency>
             <groupId>io.springfox</groupId>
@@ -77,30 +57,6 @@
             <version>${swagger.version}</version>
         </dependency>
         <!--Swagger }-->
-
-        <!--SmartRent {-->
-        <dependency>
-            <groupId>com.mg.platform</groupId>
-            <artifactId>sr-domain</artifactId>
-            <version>1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.mg.platform</groupId>
-            <artifactId>persistence</artifactId>
-            <version>2.2</version>
-        </dependency>
-        <!--SmartRent }-->
-
-        <!--Misc {-->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <!--Misc }-->
 
     </dependencies>
 

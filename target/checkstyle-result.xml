@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<checkstyle version="8.31">
-<file name="D:\GitHub\mg-smartrent\sr-api-gateway-service\src\main\java\com\mg\smartrent\gatewayapi\Application.java">
-</file>
-<file name="D:\GitHub\mg-smartrent\sr-api-gateway-service\src\main\java\com\mg\smartrent\gatewayapi\config\documentation\SwaggerConfig.java">
-</file>
-<file name="D:\GitHub\mg-smartrent\sr-api-gateway-service\src\main\java\com\mg\smartrent\gatewayapi\config\security\WebSecurityConfigAdapter.java">
-</file>
-</checkstyle>

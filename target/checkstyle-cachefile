@@ -1,7 +1,0 @@
-#Fri Jun 19 13:25:43 PDT 2020
-D\:\\GitHub\\mg-smartrent\\sr-api-gateway-service\\src\\main\\java\\com\\mg\\smartrent\\gatewayapi\\config\\documentation\\SwaggerConfig.java=1592598325519
-D\:\\GitHub\\mg-smartrent\\sr-api-gateway-service\\src\\main\\java\\com\\mg\\smartrent\\gatewayapi\\Application.java=1592596173587
-D\:\\GitHub\\mg-smartrent\\sr-api-gateway-service\\src\\main\\java\\com\\mg\\smartrent\\gatewayapi\\config\\security\\WebSecurityConfigAdapter.java=1585158373043
-module-resource*?\:checkstyle-suppressions.xml=1110E5C0DB682A99A7622D25070778F667B78A87
-module-resource*?\:checkstyle-xpath-suppressions.xml=B5221F1DDBE676905D565E9E1AD9F0618BC192C9
-configuration*?=384E284544A81EF7A5B8BF75203D36DA7B5E453F

@@ -4,26 +4,29 @@ metadata:
   name: sr-api-gateway-service
   namespace: default
   labels:
-    k8s-app: sr-api-gateway-service
+    app: sr-api-gateway-service
   annotations:
     deployment.kubernetes.io/revision: '1'
 spec:
   replicas: 1
   selector:
     matchLabels:
-      k8s-app: sr-api-gateway-service
+      app: sr-api-gateway-service
   template:
     metadata:
       name: sr-api-gateway-service
       labels:
-        k8s-app: sr-api-gateway-service
+        app: sr-api-gateway-service
     spec:
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
+      dnsPolicy: ClusterFirst
       containers:
         - name: sr-api-gateway-service
           image: 'maimas/sr-api-gateway-service:1.0.0'
           imagePullPolicy: Always
           ports:
-          - containerPort: 8080
+            - containerPort: 8080
           readinessProbe:
             httpGet:
               port: 8080
@@ -38,9 +41,10 @@ spec:
             initialDelaySeconds: 30
             timeoutSeconds: 15
             periodSeconds: 5
-      restartPolicy: Always
-      terminationGracePeriodSeconds: 30
-      dnsPolicy: ClusterFirst
+          env:
+            - name: EUREKA_INSTANCE_HOSTNAME
+              value: "sr-api-gateway-service"
+
   strategy:
     type: RollingUpdate
     rollingUpdate:
